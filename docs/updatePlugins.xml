@@ -15,7 +15,7 @@
     <!--
       The <idea-version> element must match the same element in plugin.xml. Required.
     -->
-    <idea-version since-build="203" until-build="212.*" />
+    <idea-version since-build="203" until-build="213.*" />
   </plugin>
 
 </plugins>
