@@ -10,7 +10,7 @@
     version - version of this plugin. Required. Must match <version> in plugin.xml
   -->
   <plugin id="com.github.CapstoneTeam34.slicer4jintellijplugin"
-          url="https://Capstone-Team-34.github.io/plugins/slicer4j-intellij-plugin-0.0.1.zip"
+          url="https://Capstone-Team-34.github.io/plugins/slicer4j-intellij-plugin-0.0.2.zip"
           version="0.0.2">
     <!--
       The <idea-version> element must match the same element in plugin.xml. Required.
