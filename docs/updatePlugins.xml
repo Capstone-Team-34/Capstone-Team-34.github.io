@@ -1,77 +1,21 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-<idea-plugin>
-  <version>0.0.2</version>
-  <idea-version since-build="211" until-build="213.*" />
-  <id>com.github.CapstoneTeam34.slicer4jintellijplugin</id>
-  <name>slicer4j-intellij-plugin</name>
-  <vendor>CapstoneTeam34</vendor>
-  <depends>com.intellij.modules.platform</depends>
-  <extensions defaultExtensionNs="com.intellij">
-    <applicationService serviceImplementation="com.github.CapstoneTeam34.slicer4jintellijplugin.services.MyApplicationService" />
-    <projectService serviceImplementation="com.github.CapstoneTeam34.slicer4jintellijplugin.services.MyProjectService" />
-    <projectService serviceImplementation="com.github.CapstoneTeam34.slicer4jintellijplugin.services.ToolWindowProjectService" />
-  </extensions>
-  <applicationListeners>
-    <listener class="com.github.CapstoneTeam34.slicer4jintellijplugin.listeners.MyProjectManagerListener" topic="com.intellij.openapi.project.ProjectManagerListener" />
-  </applicationListeners>
-  <actions>
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RunAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RunAction" text="Run Slicer"-->
-    <!--                description="Run slicer">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.StopAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.StopAction" text="Stop Slicer"-->
-    <!--                description="Stop slicer">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.UpdateAction" class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.UpdateAction" text="Select as Slicing Criterion" description="Update Slicer">
-      <add-to-group group-id="EditorPopupMenu" anchor="first" />
-    </action>
-    <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RunOnSelectedAction" class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RunOnSelectedAction" text="Run Slicer Here" description="Run Slicer on Highlighted Text">
-      <add-to-group group-id="EditorPopupMenu" anchor="first" />
-    </action>
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.BackwardAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.BackwardAction" text="Step Slicer Back"-->
-    <!--                description="Step slicer back">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.ForwardAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.ForwardAction"-->
-    <!--                text="Step Slicer Forward" description="Step slicer forward">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RefreshAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.RefreshAction" text="Refresh Slicer"-->
-    <!--                description="Refresh slicer">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.UndoAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.UndoAction" text="Undo Slicer"-->
-    <!--                description="Undo slicer">-->
-    <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-    <!--        <action id="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.SettingsAction"-->
-    <!--                class="com.github.CapstoneTeam34.slicer4jintellijplugin.actions.SettingsAction" text="Slicer Settings"-->
-    <!--                description="Slicer settings">-->
-    <!--            <add-to-group group-id="EditorTabPopupMenu" anchor="first"/>-->
-    <!--        </action>-->
-  </actions>
-  <!-- Start Main Plugin toolWindow Definitions -->
-  <!-- Unique id for this plugin. Must stay constant for the life of the plugin. -->
-  <id>org.intellij.sdk.toolWindow</id>
-  <!-- Text to display as name on Preferences/Settings | Plugin page -->
-  <name>SDK: Slicer4J</name>
-  <!-- Indicate this plugin can be loaded in all IntelliJ Platform-based products. -->
-  <depends>com.intellij.modules.platform</depends>
-  <!-- Text to display as description on Preferences/Settings | Plugin page -->
-  <description>&lt;p&gt;This a plugin designed for the IntelliJ IDEA Platform that integrates dynamic slicing into a GUI Java Debugger.
-The slicing implementation was designed by the ReSeSS Research Lab &lt;a href="https://github.com/resess/Slicer4J"&gt;Slicer4J github&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The <plugins> element contains the description of the plugins available at this repository. Required.
+-->
+<plugins>
+  <!--
+    Each <plugin> element describes one plugin in the repository. Required.
+    id - used by JetBrains IDEs to uniquely identify a plugin. Required. Must match <id> in plugin.xml
+    url - path to download the plugin JAR/ZIP file. Required. Must be HTTPS
+    version - version of this plugin. Required. Must match <version> in plugin.xml
+  -->
+  <plugin id="com.github.CapstoneTeam34.slicer4jintellijplugin"
+          url="https://Capstone-Team-34.github.io/plugins/slicer4j-intellij-plugin-0.0.3.zip"
+          version="0.0.3">
+    <!--
+      The <idea-version> element must match the same element in plugin.xml. Required.
+    -->
+    <idea-version since-build="211" until-build="213.*" />
+  </plugin>
 
-&lt;p&gt;To keep everything working, do not remove &lt;code&gt;&amp;lt;!-- ... --&amp;gt;&lt;/code&gt; sections.&lt;/p&gt;</description>
-  <change-notes>&lt;h3&gt;Added&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Initial scaffold created from &lt;a href="https://github.com/JetBrains/intellij-platform-plugin-template"&gt;IntelliJ Platform Plugin Template&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</change-notes>
-  <extensions defaultExtensionNs="com.intellij">
-    <toolWindow id="Slicer4J" secondary="false" icon="org.intellij.sdk.PluginIcons.slicer" anchor="right" factoryClass="org.intellij.sdk.toolWindow.MyToolWindowFactory" />
-  </extensions>
-</idea-plugin>
+</plugins>
