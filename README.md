@@ -6,6 +6,6 @@ The maven repo should be set in intellij to <https://capstone-team-34.github.io/
 
 1. Run gradle task `buildPlugin`
 2. copy `build/distributions/slicer4j-intellij-plugin-<VERSION>.zip` to `docs/plugins/`
-3. Update `docs/updatePlugins.xml` from `build/patchedPluginXmlFiles/plugin.xml`
+3. Update `docs/updatePlugins.xml` using `pluginVersion`, `pluginSinceBuild`, `pluginUntilBuild` from `build/patchedPluginXmlFiles/plugin.xml`
 
 
