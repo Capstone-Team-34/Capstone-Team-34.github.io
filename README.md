@@ -4,7 +4,7 @@ The maven repo should be set in intellij to <https://capstone-team-34.github.io/
 
 ## Updating Repository
 
-1. Open Gradle Tool Window in repo slicer4j-intellij-plugin (https://github.com/Capstone-Team-34/slicer4j-intellij-plugin) 
+1. Download slicer4j-intellij-plugin repository (https://github.com/Capstone-Team-34/slicer4j-intellij-plugin) and oen Gradle Tool Window
 2. Run gradle task `buildPlugin` 
 <img width="1440" alt="Screen Shot 2022-04-24 at 8 18 10 PM" src="https://user-images.githubusercontent.com/42990646/165015217-99d0bf17-9992-4f81-a374-c9dba9867e0b.png">
 
