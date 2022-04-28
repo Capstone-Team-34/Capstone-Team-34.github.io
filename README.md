@@ -4,13 +4,13 @@
 
 1. Download slicer4j-intellij-plugin repository (https://github.com/Capstone-Team-34/slicer4j-intellij-plugin) and open Gradle Tool Window
 
-2. Make sure Gradle is using JVM version 11 as well as Project SDK 
+2. Make sure Project SDK and Gradle are set to JVM 11  
 
 &emsp;Project SDK: <kbd>File</kbd> > <kbd>Project Structure</kbd>
 
 &emsp;<img width="1021" alt="image" src="https://user-images.githubusercontent.com/42990646/165678336-05d412c4-dcf1-4d1e-aa94-de10250ab006.png">
 
-&emsp;Gradle setting: <kbd>IntelliJ IDEA</kbd> > <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment </kbd> > <kbd>Build Tools</kbd> < <kbd>Gradle</kbd>
+&emsp;Gradle setting: <kbd>IntelliJ IDEA</kbd> > <kbd>Preferences</kbd> > <kbd>Build, Execution, Deployment </kbd> > <kbd>Build Tools</kbd> > <kbd>Gradle</kbd>
 
 &emsp;<img width="1031" alt="image" src="https://user-images.githubusercontent.com/42990646/165678489-8b44b761-4f5f-48f6-95a5-18a37a88b408.png">
 
