@@ -1,7 +1,5 @@
 # Slicer4J IntelliJ Plugin Maven Repository
 
-The maven repo should be set in intellij to <https://capstone-team-34.github.io/updatePlugins.xml>
-
 ## Updating Repository
 
 1. Download slicer4j-intellij-plugin repository (https://github.com/Capstone-Team-34/slicer4j-intellij-plugin) and open Gradle Tool Window
